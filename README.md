@@ -1,1 +1,2 @@
 # udemy_flask
+udemyで、flaskを学習した際に作成したものを格納するリポジトリ

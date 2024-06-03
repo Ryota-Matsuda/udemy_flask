@@ -2,7 +2,7 @@
 udemyで、flaskを学習した際に作成したものを格納するリポジトリ
 
 # sshでのGitHubへのアクセス手順
-[こちらの記事]https://qiita.com/suthio/items/2760e4cff0e185fe2db9を参照
+[こちらの記事](https://qiita.com/suthio/items/2760e4cff0e185fe2db9)を参照
 1. 事前準備
 Unixコマンドを使用できる環境を開く(コマンドプロンプトor powershellを管理者権限で実行)
 2.  新しいSSH Keyの作成
@@ -39,6 +39,7 @@ ssh -T git@github.com
 ~~~
 Hi Ryota-Matsuda! You've successfully authenticated, but GitHub does not provide shell access.
 ~~~
+<<<<<<< HEAD
 
 # PythonとFlaskの環境構築
 1. Pythonのインストール
@@ -66,3 +67,5 @@ pip install Flask
 ~~~
 
 4. 確認
+=======
+>>>>>>> e5912665fca121c638551797e7af9b2dd2be085c

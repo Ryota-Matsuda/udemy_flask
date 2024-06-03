@@ -39,3 +39,30 @@ ssh -T git@github.com
 ~~~
 Hi Ryota-Matsuda! You've successfully authenticated, but GitHub does not provide shell access.
 ~~~
+
+# PythonとFlaskの環境構築
+1. Pythonのインストール
+2. 仮想環境の構築
+仮想環境を構築したいディレクトリに移動後、以下のコマンドを実行し、仮想環境を構築する
+仮想環境を構築する理由は、使用するアプリケーションに応じて、Flaskのバージョンを管理したい場合があるから
+~~~
+mkdir myproject
+cd myproject
+py -3 -m venv venv
+~~~
+3. 仮想環境でFlaskのインストール
+以下のコマンドを実行し、仮想環境を有効にする
+~~~
+./venv/Scripts/activate
+~~~
+カレントディレクトリの表示が以下のようになれば成功
+~~~
+(venv) PS C:/…/…/…
+~~~
+
+以下のコマンドを実行し、Flaskをインストールする
+~~~
+pip install Flask
+~~~
+
+4. 確認

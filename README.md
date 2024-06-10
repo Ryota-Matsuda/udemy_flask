@@ -102,3 +102,8 @@ $env:FLASK_ENV = "development"
 ~~~
 flask run
 ~~~
+
+デバッグモードで起動するときは、以下のコマンドを実行する
+~~~
+flask run --debug
+~~~

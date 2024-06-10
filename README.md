@@ -39,7 +39,6 @@ ssh -T git@github.com
 ~~~
 Hi Ryota-Matsuda! You've successfully authenticated, but GitHub does not provide shell access.
 ~~~
-<<<<<<< HEAD
 
 # PythonとFlaskの環境構築
 1. Pythonのインストール
@@ -67,5 +66,39 @@ pip install Flask
 ~~~
 
 4. 確認
-=======
->>>>>>> e5912665fca121c638551797e7af9b2dd2be085c
+~~~
+flask --version
+~~~
+上記のコマンドを実行し、
+
+~~~
+Python 3.12.3
+Flassk 3.0.3
+Werkzeug 3.0.3
+~~~
+のように、flaskのバージョンが表示されれば成功。
+
+# Flaskの実行方法
+1. 仮想環境をactivateする
+PowerShellやコマンドプロンプトを起動後、myprojectディレクトリに移動し、以下のコマンドを実行する
+~~~
+./venv/Script/activate
+~~~
+
+ディレクトリの表示が、以下のように左端に(venv)が表示されれば成功
+~~~
+(venv) PS C:\Users\ryota matsuda\Desktop\udemy_study\udemy_flask\myproject>
+~~~
+
+2. 環境変数の設定
+以下2つの環境変数を設定する
+~~~
+$env:FLASK_APP = "app"
+$env:FLASK_ENV = "development"
+~~~
+
+3. Flaskの実行
+以下のコマンドを実行する
+~~~
+flask run
+~~~

@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, Ryota</h1>
+    <h1>Hello, {{ name }}!</h1>
     <p>こんにちは！</p>
     <p>サーフィンが趣味です！</p>
+    {% for message in list %}
+        {% if loop.index % 2 == 0%}
+        <li>{{message}}</li>
+        {% endif %}
+    {% endfor %}
 </body>
 </html>
